@@ -1,5 +1,7 @@
 package main
-import "fmt"
+import  (
+	"fmt"
+)
 
 func print(nums ...int){
 	fmt.Println(nums)
@@ -10,5 +12,7 @@ func print(nums ...int){
 func main() {
 	// Create a slice of integers
 	print(1, 2, 3, 4, 5) // Passing variadic arguments
+
+	fmt.Println("Passing a slice as variadic arguments:")
 
 }
