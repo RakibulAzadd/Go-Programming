@@ -9,6 +9,10 @@ type User struct {
 func print(arr *[3]int) {
 	fmt.Println("Array:", arr)
 }
+func st_print(us *User){
+	fmt.Println("Name:", us.Name)
+	fmt.Println("Age:", us.Age)	
+}
 func main() {
 	var a int = 10
 	 
@@ -27,7 +31,7 @@ func main() {
 	}
 
 	pp := &usr // pp is a pointer to usr
-
+	st_print(pp) // Dereferencing pointer to pass value
 	fmt.Println(*pp)
 
 	fmt.Println(pp.Name) // Accessing field through pointer
